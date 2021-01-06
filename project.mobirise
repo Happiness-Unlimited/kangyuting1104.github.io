@@ -1,0 +1,841 @@
+{
+  "settings": {
+    "name": "bless_unlimited",
+    "currentPage": "page2.html",
+    "theme": {
+      "name": "mobirise-amp",
+      "title": "Mobirise AMP",
+      "styling": {
+        "primaryColor": "#4ea2e3",
+        "secondaryColor": "#4addff",
+        "successColor": "#ff0000",
+        "infoColor": "#8282e7",
+        "warningColor": "#767676",
+        "dangerColor": "#a0a0a0",
+        "mainFont": "Roboto",
+        "display1Font": "Roboto",
+        "display1Size": 4.5,
+        "display2Font": "Roboto",
+        "display2Size": 2.2,
+        "display5Font": "Roboto",
+        "display5Size": 1.8,
+        "display7Font": "Roboto",
+        "display7Size": 1.1,
+        "display4Font": "Roboto",
+        "display4Size": 0.9,
+        "isRoundedButtons": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#4ea2e3"
+      },
+      "additionalSetColors": [
+        "#e29696",
+        "#aa7474",
+        "#7c0000",
+        "#ffac00",
+        "#ff8282",
+        "#ff0000",
+        "#ece5d8"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.12.4",
+    "siteFonts": [],
+    "imageResize": true,
+    "uniqCompNum": 84,
+    "versionPublish": "5.2.0",
+    "screenshot": "screenshot.png",
+    "favicon": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "color": "#ff8282"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffac00"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/img-6209-975x780.png\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#0e0e87\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-section-title mbr-fonts-style align-right mbr-bold mbr-white mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">BLISS UNLIMITED COMPANY</h1>\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style align-right mbr-white mbr-light mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubTitle\"><b>幸福无限公司</b></h3>\n        <p class=\"mbr-fonts-style mbr-text align-right mbr-pt-1 mbr-pb-3 mbr-white\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">高速快捷有效的情绪治愈服务，以及高度的个人隐私保护<br>我们的宗旨是：让每一位顾客都收获幸福</p>\n        <div class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-info\" href=\"page2.html\" data-app-placeholder=\"Type Text\"><span class=\"mbri-down mbr-iconfont mbr-iconfont-btn\"></span><font face=\"MobiriseIcons\">开启幸福之旅</font>&nbsp;</a></div>\n    </div>\n\n</section>",
+          "_cid": "sisBaOUpGo",
+          "_anchor": "header1-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page2.html": {
+      "settings": {
+        "title": "业务概述",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": 2
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "& when not (@fullWidth)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            ".image-block": {
+              "& when not (@fullWidth)": {
+                "width": "~\"@{videoSize}%\"",
+                "@media (max-width: 767px)": {
+                  "width": "100% !important"
+                }
+              }
+            },
+            "img": {
+              "object-fit": "contain"
+            },
+            ".mbr-text": {
+              "color": "#494949"
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section class=\"image2\" group=\"Images & Videos\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showText\" checked>\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ece3d3\" condition=\"showText==true\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"image-block mbr-m-auto\">\n            <amp-img src=\"@PROJECT_PATH@/assets/images/img-6218-975x780.png\" layout=\"responsive\" width=\"612.4554164420485\" height=\"540.359\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                <div placeholder class=\"placeholder\"></div>\n                <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img-6218-975x780.png\" alt=\"Mobirise\" title>\n            </amp-img>\n            <div class=\"mbr-figure-caption\" mbr-if=\"showText\">\n                <p mbr-text class=\"mbr-text mbr-black align-center mbr-fonts-style\" mbr-class=\"{'mbr-py-1': !fullWidth, 'mbr-py-1 mbr-px-2': fullWidth}\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">“你能回答你是谁？你在哪？你在做什么吗？<br>我们所生活的、所感受的世界都无比真实，但是要怎么样才能证明它就是真实存在的呢？<br>昔者庄周梦为蝴蝶，栩栩然蝴蝶也，自喻适志与，不知周也。俄然觉，则戚戚然周也。不知周之梦为蝴蝶与，蝴蝶之梦为周与？周与蝴蝶则必有分矣。此之谓物化。<br>山川、河流、大海，我曾无比艳羡那个人所看到的场景，于是我也将我的大脑置之其中，有一天当我醒来，我疑惑于自己究竟是谁？我曾亲身遍踏河山，又为何在梦中无限企盼？<br>究竟是我们自己欺骗了我们的大脑，还是我们的大脑欺骗了我们自己？ ”</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siE7BMopf6",
+          "_anchor": "image2-1t",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#494949",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "color": "#232323"
+            },
+            ".mbr-section-title DIV": {
+              "text-align": "center"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ece3d3\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light mbr-py-1\" mbr-if=\"showTitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-title\"><b>&nbsp; &nbsp; &nbsp;与人们想象中的不同，2080年的世界既不是一个黑色幽默TRPG，也没有在讲述在一个典型1984式的未来，以及一个由精神病电脑控制的封闭城市的生活。</b><b><br></b><b>&nbsp; &nbsp; 相反，阿尔法联合国是一个乌托邦。这里没有异能者、叛徒或秘密社团。技术比文明史上任何时候都要先进，而研究和发展处也没有例行公事地涉及分发原型武器，并且如果它掉在地上，永远也不会发出核爆炸。</b><br><b>&nbsp; &nbsp; 阿尔法联合国中的所有居民都非常幸福的住在里面，永远不会离开。</b><br><b>&nbsp; &nbsp; 在世界科技高速发展的2080年，人比起作为一个有情绪的生物体更像流水线上被安排好的机械装置。为了控制社会性心理问题的扩大，保障人们的幸福指数，出现了一类提供心理治疗服务公司。</b><br><b>&nbsp; &nbsp;&nbsp;</b><br><b>&nbsp; &nbsp; 本公司在此背景下建成，不同于私人诊所，是由阿尔法联合国政府赞助的合法公司。服务的主打亮点是高速快捷有效的情绪治愈服务，以及高度的个人隐私保护。</b><div><br></div><div><b><i>&nbsp; &nbsp; </i>本公司的核心宗旨是：让每一个顾客重新获得幸福。</b></div><br><br><div><b><i>&nbsp; </i></b><i style=\"font-weight: bold;\">&nbsp;</i> &nbsp; <br></div></h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>“今天，你感到幸福了吗？”<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siucRrVokq",
+          "_anchor": "content2-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content5",
+          "_customHTML": "<section class=\"mbr-section content5\" plugins=\"amp-main\" group=\"Article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#ece3d3\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-section-btn mbr-col-md-12 mbr-col-sm-12 mbr-col-lg-8 align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-info-outline\" href=\"page3.html\" data-app-placeholder=\"Type Text\">“缸中之脑”概念介绍</a>\n                <a class=\"btn btn-danger\" href=\"page4.html\" data-app-placeholder=\"Type Text\">&nbsp; 公司职员介绍&nbsp;</a></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siufXNDRhn",
+          "_anchor": "content5-q",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content5",
+          "_customHTML": "<section class=\"mbr-section content5\" plugins=\"amp-main\" group=\"Article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#ece3d3\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-section-btn mbr-col-md-12 mbr-col-sm-12 mbr-col-lg-8 align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger\" href=\"page5.html\" data-app-placeholder=\"Type Text\">&nbsp; &nbsp; &nbsp; 公司产业链 &nbsp; &nbsp;&nbsp;</a>\n                <a class=\"btn btn-info-outline\" href=\"page6.html\" data-app-placeholder=\"Type Text\">&nbsp; &nbsp;主打产品 &nbsp; &nbsp; &nbsp;</a></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siujmwBLhd",
+          "_anchor": "content5-14",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@showTitle), (@showSubtitle)": {
+              "@media (max-width: 991px)": {
+                ".btn-container when (@showButton)": {
+                  "padding-top": "2rem"
+                }
+              }
+            }
+          },
+          "_name": "info2",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"info2\" group=\"Testimonials & Info\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButton\" checked>\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\" condition=\"(showTitle || showSubtitle) && showButton\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ece5d8\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse': reverse}\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\" mbr-if=\"showTitle || showSubtitle\">\n                <h2 class=\"mbr-section-title align-left mbr-fonts-style mbr-bold mbr-pb-2\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    Accelerated Mobile Pages\n                </h2>\n                <h3 class=\"mbr-text align-left mbr-fonts-style mbr-regular\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">\n                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum atque, rerum excepturi fuga reprehenderit laudantium, dolorum autem iusto ipsum harum perspiciatis nobis sequi sint.\n                </h3>\n            </div>\n            <div class=\"btn-container mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-4 align-center mbr-flex\" mbr-if=\"showButton\">\n                <div class=\"mbr-section-btn mbr-m-auto\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-info\" href=\"index.html\" data-app-placeholder=\"Type Text\">返回首页</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "skqD9IuyJj",
+          "_anchor": "info2-29",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page3.html": {
+      "settings": {
+        "title": "缸中之脑",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": 5
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "color": "#ff8282"
+            }
+          },
+          "_name": "header4",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/img-6214-975x780.jpeg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#15181b\"> \n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style mbr-section-title align-left mbr-black mbr-bold mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"></h1>\n        <h2 class=\"mbr-fonts-style mbr-section-subtitle align-left mbr-black mbr-light mbr-pb-2\" mbr-theme-style=\"display-2\" mbr-if=\"showText\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">\n            Building the future web, together\n        </h2>\n        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-5\"><a class=\"btn btn-md btn-success-outline\" href=\"#top\" data-app-placeholder=\"Type Text\">关于公司背后的动机——绝不可外泄的私密文件<br><br>“缸中之脑”<br></a></div>\n    </div>\n</section>",
+          "_cid": "siEOKTx3FC",
+          "_anchor": "header4-20",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#7c0000"
+            }
+          },
+          "_name": "content16",
+          "_customHTML": "<section class=\"content16 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ece5d8\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-white mbr-bold mbr-py-4\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" mbr-text>\n            <i>“缸中之脑”</i><br><i>人的记忆被存储在大脑皮质中，并且可以被脑电流或者外部电流所激发</i><br><i><br></i><span style=\"font-weight: normal;\">缸中之脑（英语：Brain in a vat），又称桶中之脑（brain in a jar），是知识论中的一个思想实验，由哲学家希拉里·普特南在《理性、真理和历史》（Reason, Truth, and History）一书中提出。\n        </span><div><span style=\"font-weight: normal;\">实验的基础是人所体验到的一切最终都要在大脑中转化为神经信号。假设一个疯子科学家、机器或其他任何意识将一个大脑从人体取出，放入一个装有营养液的缸里维持着它的生理活性，超级计算机通过神经末梢向大脑传递和原来一样的各种神经电信号，并对于大脑发出的信号给予和平时一样的信号反馈，则大脑所体验到的世界其实是计算机制造的一种虚拟现实，则此大脑能否意识到自己生活在虚拟现实之中？</span></div><div><span style=\"font-weight: normal;\">这个思想实验常被引用来论证一些哲学，如知识论、怀疑论、唯我论和主观唯心主义。一个简单的论证如下：因为缸中之脑和头颅中的大脑接收一模一样的信号，而且这是他唯一和环境交流的方式，从大脑中角度来说，它完全无法确定自己是颅中之脑还是缸中之脑。如果是前者，那它的想法是正确的，他确实走在大街上或者在划船。如果是后者，那它就是错误的，它并没有在走路或划船，只是接收到了相同的电信号而已。一个大脑无法知道自己是在颅中还是缸中，因此这世间的一切可能都是虚假的、虚妄的。那么什么是真实？</span></div><div><span style=\"font-weight: normal;\">从生物学的角度讲，个体对于客观存在的认知或判别取决于他所接收的刺激，假设缸中脑生成一系列“测试用”反应用于检测自身的认知，同时“系统”又能及时给予相应的刺激作为回应，此时问题的结症就不在于缸中脑对于世界的认知，而在于“观察者”自身对于世界的认知。自身存在的客观性被质疑，在一个完全由“刺激”创造的“意识世界”中将形成一个悖论。</span></div><div><i><br></i></div></div>\n    </div>\n</section>",
+          "_cid": "siugvHxPMx",
+          "_anchor": "content16-u",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@showTitle), (@showSubtitle)": {
+              "@media (max-width: 767px)": {
+                ".btn-container when (@showButton)": {
+                  "padding-top": "1rem"
+                }
+              }
+            }
+          },
+          "_name": "info2",
+          "_customHTML": "<section class=\"info2\" group=\"Testimonials & Info\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"7\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButton\" checked>\n        <input type=\"checkbox\" title=\"Text on Left/Right\" name=\"flexDirection\" condition=\"(showTitle || showSubtitle) && showButton\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ece3d3\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse': flexDirection}\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-8\" mbr-if=\"showTitle || showSubtitle\">\n                <h2 class=\"mbr-section-title align-right mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    Accelerated Mobile Pages\n                </h2>\n                <h3 class=\"mbr-section-subtitle align-right mbr-fonts-style mbr-light mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum atque, rerum excepturi fuga reprehenderit laudantium, dolorum autem iusto ipsum harum perspiciatis nobis sequi sint.\n                </h3>\n            </div>\n            <div class=\"btn-container mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 align-center mbr-flex\" mbr-if=\"showButton\">\n                <div class=\"mbr-section-btn mbr-m-auto\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-success-outline\" href=\"page2.html\" data-app-placeholder=\"Type Text\">返回前一页</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siuhtLTFxy",
+          "_anchor": "info2-12",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page4.html": {
+      "settings": {
+        "title": "职员介绍",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": 6
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#ff8282"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"content4 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ece5d8\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-light mbr-py-4\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-text><b><i>&nbsp; &nbsp; 绝对机密的员工资料，本公司承诺保障每一个员工的生命安全。</i></b></div>\n    </div>\n</section>",
+          "_cid": "siEQU1wmaI",
+          "_anchor": "content4-21",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"content4 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ece5d8\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-light mbr-py-4\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-text>\n            作为公司内的三名维稳员工，我们当然不是任何秘密社团的成员也从未犯过反叛罪。维稳员工永远不会阴谋反对。毕竟，我们是维稳员工，如果一个维稳员工是叛徒，很明显他们会开枪自杀，这样他们就能从完美的阿尔法联合国中消失。</div>\n    </div>\n</section>",
+          "_cid": "siJXgeG94f",
+          "_anchor": "content4-22",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card": {
+              ".card-wrapper": {
+                "background": "@cardBg",
+                "@media (max-width: 767px)": {
+                  "padding-top": "1rem"
+                }
+              },
+              "& when (@cardsAmount = '4')": {
+                "@media (min-width: 992px)": {
+                  "padding-left": "1rem",
+                  "padding-right": "1rem"
+                }
+              }
+            },
+            ".card-img amp-img": {
+              "width": "50%"
+            },
+            ".card-subtitle": {
+              "letter-spacing": "3px"
+            },
+            ".card-box": {
+              "@media (max-width: 767px)": {
+                "padding": "1rem"
+              }
+            },
+            ".mbr-row when (@cardsAmount < '4')": {
+              "margin-left": "-1.5rem",
+              "margin-right": "-1.5rem"
+            },
+            ".mbr-row when (@cardsAmount = '4')": {
+              "@media (max-width: 991px)": {
+                "margin-left": "-1.5rem",
+                "margin-right": "-1.5rem"
+              }
+            },
+            "& when (@showSocial)": {
+              ".iconfont-wrapper, .amp-iconfont": {
+                "width": "~\"@{iconsSize}rem\"",
+                "height": "~\"@{iconsSize}rem\"",
+                "font-size": "~\"@{iconsSize}rem\"",
+                "color": "@iconsColor",
+                "& when ((@iconsSize * 16) > 30)": {
+                  "@media (max-width: 767px)": {
+                    "font-size": "30px",
+                    "height": "30px",
+                    "width": "30px"
+                  }
+                }
+              }
+            }
+          },
+          "_name": "team1",
+          "_customHTML": "<section class=\"team1 mbr-section\" group=\"Testimonials & Teams\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Specialty\" name=\"showSpecialty\" checked>\n        <input type=\"checkbox\" title=\"Show Name\" name=\"showName\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        \n        <input type=\"checkbox\" title=\"Show Social\" name=\"showSocial\" checked>\n        <input type=\"range\" inline title=\"Social Count\" name=\"iconsCount\" min=\"1\" max=\"9\" step=\"1\" value=\"1\" condition=\"showSocial\">\n        <input type=\"color\" title=\"Social Color\" name=\"iconsColor\" value=\"#232323\" condition=\"showSocial\">\n        <input type=\"range\" inline title=\"Size Social\" name=\"iconsSize\" min=\"0.8\" max=\"4\" step=\"0.1\" value=\"2.5\" condition=\"showSocial\">\n        \n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <input type=\"color\" title=\"Card BG\" name=\"cardBg\" value=\"#ffac00\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background6.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ece5d8\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-px-3\" mbr-class=\"{'mbr-col-lg-4': cardsAmount <= 3,\n                             'mbr-col-lg-3': cardsAmount > 3, 'md-pb': cardsAmount > 2, 'last-child': cardsAmount == 1}\">\n                <div class=\"card-wrapper mbr-pt-5\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/-4-276x364.png\" layout=\"responsive\" width=\"137.656\" height=\"137.656\" alt=\"Mobirise\" class=\"mobirise-loader rounded mbr-m-auto\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp rounded\" src=\"@PROJECT_PATH@/assets/images/-4-276x364.png\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4 mbr-px-4 mbr-pb-5\">\n                        <h4 class=\"mbr-fonts-style card-subtitle align-center mbr-semibold\" mbr-theme-style=\"display-4\" data-app-selector=\".card-subtitle, .social\" mbr-if=\"showSpecialty\">职员</h4>\n                        <h3 class=\"card-title mbr-fonts-style align-center mbr-pt-1\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\".card-title, .social\" mbr-class=\"{'mbr-pb-3': showText}\">康雨婷</h3>\n                        <p class=\"mbr-text mbr-fonts-style align-center mbr-pt-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .social\">\n                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aperiam\n                        </p>\n                        <div class=\"icons-list social align-center\" mbr-list mbr-list-grow=\"iconsCount\" mbr-if=\"showSocial\" mbr-class=\"{'mbr-pt-3': showText || showName || showSpecialty}\">\n                            \n                                <span class=\"iconfont-wrapper\">\n                                    <a href=\"https://dakailaiba.cargo.site/admin/16436798\"><span mbr-icon class=\"amp-iconfont mbri-sale\"></span></a>\n                                </span>\n                            \n                            \n                            \n                        </div>\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-px-3\" mbr-class=\"{'mbr-col-lg-4': cardsAmount <= 3,\n                             'mbr-col-lg-3': cardsAmount > 3, 'md-pb': cardsAmount > 2, 'last-child': cardsAmount == 2}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper mbr-pt-5\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/wechatimg121-276x291.jpeg\" layout=\"responsive\" height=\"137.656\" width=\"137.656\" alt=\"Mobirise\" class=\"mobirise-loader rounded mbr-m-auto\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp rounded\" src=\"@PROJECT_PATH@/assets/images/wechatimg121-276x291.jpeg\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4 mbr-px-4 mbr-pb-5\">\n                        <h4 class=\"mbr-fonts-style card-subtitle align-center mbr-semibold\" mbr-theme-style=\"display-4\" data-app-selector=\".card-subtitle, .social\" mbr-if=\"showSpecialty\">职员</h4>\n                        <h3 class=\"card-title mbr-fonts-style align-center mbr-pt-1\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\".card-title, .social\" mbr-class=\"{'mbr-pb-3': showText}\">喻纪方</h3>\n                        <p class=\"mbr-text mbr-fonts-style align-center mbr-pt-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .social\">\n                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aperiam\n                        </p>\n                        <div class=\"icons-list social align-center\" mbr-list mbr-list-grow=\"iconsCount\" mbr-if=\"showSocial\" mbr-class=\"{'mbr-pt-3': showText || showName || showSpecialty}\">\n                            <a href=\"https://sifojp8qas.mobirisesite.com/\" target=\"_blank\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont mbri-sale\"></span>\n                                </span>\n                            </a>\n                            \n                            \n                        </div>\n                    </div>\n                </div>\n            </div>\n        \n            <div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-px-3\" mbr-class=\"{'mbr-col-lg-4': cardsAmount <= 3,\n                             'mbr-col-lg-3': cardsAmount > 3, 'last-child': cardsAmount == 3}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper mbr-pt-5\">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@PROJECT_PATH@/assets/images/1-276x276.jpg\" layout=\"responsive\" height=\"137.656\" width=\"137.656\" alt=\"Mobirise\" class=\"mobirise-loader rounded mbr-m-auto\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp rounded\" src=\"@PROJECT_PATH@/assets/images/1-276x276.jpg\" alt=\"Mobirise\" title>\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4 mbr-px-4 mbr-pb-5\">\n                        <h4 class=\"mbr-fonts-style card-subtitle align-center mbr-semibold\" mbr-theme-style=\"display-4\" data-app-selector=\".card-subtitle, .social\" mbr-if=\"showSpecialty\">职员</h4>\n                        <h3 class=\"card-title mbr-fonts-style align-center mbr-pt-1\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\".card-title, .social\" mbr-class=\"{'mbr-pb-3': showText}\">沈思奇</h3>\n                        <p class=\"mbr-text mbr-fonts-style align-center mbr-pt-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .social\">\n                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aperiam\n                        </p>\n                        <div class=\"icons-list social align-center\" mbr-list mbr-list-grow=\"iconsCount\" mbr-if=\"showSocial\" mbr-class=\"{'mbr-pt-3': showText || showName || showSpecialty}\">\n                            <a href=\"https://w6vm8c4vrl.mobirisesite.com/\" target=\"_blank\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont mbri-sale\"></span>\n                                </span>\n                            </a>\n                            \n                            \n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card mbr-col-sm-12 mbr-col-md-6 mbr-px-3\" mbr-class=\"{'mbr-col-lg-4': cardsAmount <= 3,\n                             'mbr-col-lg-3': cardsAmount > 3, 'last-child': cardsAmount == 4}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper mbr-pt-5 \">\n                    <div class=\"card-img\">\n                        <amp-img src=\"@THEME_PATH@/components/_images/face2.jpg\" layout=\"responsive\" height=\"9\" width=\"16\" alt=\"Mobirise\" class=\"mobirise-loader rounded mbr-m-auto\">\n                            <div placeholder class=\"placeholder\"></div>\n                            <img class=\"mbr-temp rounded\" src=\"@THEME_PATH@/components/_images/face2.jpg\" alt=\"Mobirise\">\n                        </amp-img>\n                    </div>\n                    <div class=\"card-box mbr-pt-4 mbr-px-4 mbr-pb-5\">\n                        <h4 class=\"mbr-fonts-style card-subtitle align-center mbr-semibold\" mbr-theme-style=\"display-4\" data-app-selector=\".card-subtitle, .social\" mbr-if=\"showSpecialty\">DESIGNER</h4>\n                        <h3 class=\"card-title mbr-fonts-style align-center mbr-pt-1\" mbr-theme-style=\"display-5\" mbr-if=\"showName\" data-app-selector=\".card-title, .social\" mbr-class=\"{'mbr-pb-3': showText}\">Karin Miller</h3>\n                        <p class=\"mbr-text mbr-fonts-style align-center mbr-pt-1\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .social\">\n                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aperiam\n                        </p>\n                        <div class=\"icons-list social align-center\" mbr-list mbr-list-grow=\"iconsCount\" mbr-if=\"showSocial\" mbr-class=\"{'mbr-pt-3': showText || showName || showSpecialty}\">\n                            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                                <span class=\"iconfont-wrapper\">\n                                    <span mbr-icon class=\"amp-iconfont fa-facebook-f fa\"></span>\n                                </span>\n                            </a>\n                            \n                            \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siugHPMuXp",
+          "_anchor": "team1-11",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "color": "#48525c",
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "color": "#767676",
+              "text-align": "left"
+            }
+          },
+          "_name": "content2",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"02 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"range\" title=\"Width\" name=\"textWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ece5d8\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{'mbr-jc-c' : alignContent == 2, 'mbr-jc-e' : alignContent == 3}\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-bold mbr-pb-2\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">组内分工</h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>装置制作：喻纪方，康雨婷，沈思奇<br>程序设计：康雨婷<br>装置建模：喻纪方<br>文案编写：沈思奇，喻纪方，康雨婷<br>网页制作：康雨婷<br>视频制作：喻纪方，沈思奇，康雨婷</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sk69K1TsJx",
+          "_anchor": "content2-26",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@showTitle), (@showSubtitle)": {
+              "@media (max-width: 767px)": {
+                ".btn-container when (@showButton)": {
+                  "padding-top": "1rem"
+                }
+              }
+            }
+          },
+          "_name": "info2",
+          "_customHTML": "<section class=\"info2\" group=\"Testimonials & Info\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButton\" checked>\n        <input type=\"checkbox\" title=\"Text on Left/Right\" name=\"flexDirection\" condition=\"(showTitle || showSubtitle) && showButton\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ece5d8\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse': flexDirection}\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-8\" mbr-if=\"showTitle || showSubtitle\">\n                <h2 class=\"mbr-section-title align-right mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    Accelerated Mobile Pages\n                </h2>\n                <h3 class=\"mbr-section-subtitle align-right mbr-fonts-style mbr-light mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum atque, rerum excepturi fuga reprehenderit laudantium, dolorum autem iusto ipsum harum perspiciatis nobis sequi sint.\n                </h3>\n            </div>\n            <div class=\"btn-container mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 align-center mbr-flex\" mbr-if=\"showButton\">\n                <div class=\"mbr-section-btn mbr-m-auto\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-info\" href=\"page2.html\" data-app-placeholder=\"Type Text\">返回上一个界面</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siuhRu8wky",
+          "_anchor": "info2-13",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page5.html": {
+      "settings": {
+        "title": "公司产业链",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": 3
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/-3-1299x896.png\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#0dd1ff\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-section-title mbr-fonts-style align-right mbr-bold mbr-white mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">关于公司产业链的介绍</h1>\n        <h3 class=\"mbr-section-subtitle mbr-fonts-style align-right mbr-white mbr-light mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubTitle\">\n            Accelerate your site with AMP\n        </h3>\n        <p class=\"mbr-fonts-style mbr-text align-right mbr-pt-1 mbr-pb-3 mbr-white\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-if=\"showText\">\n            Full width intro with adjustable height, background image. Click any text to edit or style it.\n        </p>\n        <div class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.co\">\n                LEARN MORE\n            </a>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "siExseA9NQ",
+          "_anchor": "header1-1w",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#efefef"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#000000\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light mbr-py-1\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\"></h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>「一个叫做笛卡尔的小镇青年，他说，他曾经看到一只恶魔的诞生。 」<br>\n<br>无论是谁，都可以在这里进入他人的世界。\n<br>你有没有最羡慕过的人？有没有最想过的生活？在这里，你可以得到你想得到的。本公司致力于带客户进入一段特殊的“感官之旅”。2080年，在这个时代，slogs（Sense Blogs）就像曾经的vlogs开始风靡。而我们所做的，就是让客户完全地进入这个感官世界中，得到他所期望得到的。\n<br>这将是一种全新的精神疗愈方式。\n<br>\n<br>\n<br>「一个理想国里，有囚徒在追逐火光。 」<br>\n<br>\n<br>无论是谁，都可以在这里收获快乐与幸福。\n<br>这是公司的主旨。\n<br>公司在市场中还设置“感官记忆”收购业务，当下不少人开始通过贩卖自己录制的感官经历获利。那些经历中，人们有着对生活的不满、怨怼，以及少得可怜的愉悦，所有人都在舍弃自己的生活。\n<br>现今公司已拥有巨大的感官记忆数据库。 \n<br>这些数据是痛苦的吗？\n<br>不，因为总会有人需要它的。\n<br>本公司致力于提供最为幸福舒适的专业心理疗愈服务。\n<br>在心理治疗工作室接受服务的客户，将接触到专业的感官读取装置，通过体验数据库中最想经历的他人感官记忆，来进行一场心灵的释放。\n<br>本公司郑重承诺，这将会是一段幸福快乐的体验。\n<br>因为那是您所深信不疑的渴求。\n<br>\n<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siukCLLoCO",
+          "_anchor": "content2-1h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@showTitle), (@showSubtitle)": {
+              "@media (max-width: 767px)": {
+                ".btn-container when (@showButton)": {
+                  "padding-top": "1rem"
+                }
+              }
+            }
+          },
+          "_name": "info2",
+          "_customHTML": "<section class=\"info2\" group=\"Testimonials & Info\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButton\" checked>\n        <input type=\"checkbox\" title=\"Text on Left/Right\" name=\"flexDirection\" condition=\"(showTitle || showSubtitle) && showButton\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse': flexDirection}\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-8\" mbr-if=\"showTitle || showSubtitle\">\n                <h2 class=\"mbr-section-title align-right mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    Accelerated Mobile Pages\n                </h2>\n                <h3 class=\"mbr-section-subtitle align-right mbr-fonts-style mbr-light mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum atque, rerum excepturi fuga reprehenderit laudantium, dolorum autem iusto ipsum harum perspiciatis nobis sequi sint.\n                </h3>\n            </div>\n            <div class=\"btn-container mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 align-center mbr-flex\" mbr-if=\"showButton\">\n                <div class=\"mbr-section-btn mbr-m-auto\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"page2.html\" data-app-placeholder=\"Type Text\">返回上一个界面</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siukWOA7WO",
+          "_anchor": "info2-1p",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page6.html": {
+      "settings": {
+        "title": "主打产品",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": "",
+        "order": 4
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "color": "#ff8282"
+            },
+            ".mbr-section-subtitle, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header4",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/-3-1299x896.png\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#15181b\"> \n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <h1 class=\"mbr-fonts-style mbr-section-title align-left mbr-black mbr-bold mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><span style=\"font-weight: normal;\"><i><br></i></span><br><br><br><br><br><br><span style=\"font-weight: normal;\"><i><br></i></span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><span style=\"font-weight: normal;\"><i>还在为无法获得幸福而烦恼吗？</i></span><div><span style=\"font-weight: normal;\"><i>全民好评销售中的大促销产品——</i></span></div><div><span style=\"font-weight: normal;\"><i>为您扫清获得幸福路上的一切障碍</i></span></div><div><span style=\"font-weight: normal;\"><i>本公司倾情推荐——</i></span></div><div><span style=\"font-weight: normal;\"><i>获阿尔法联合国年度产品大赏的——</i></span></div><div><span style=\"font-weight: normal;\"><i><br></i></span></div></h1>\n        <h2 class=\"mbr-fonts-style mbr-section-subtitle align-left mbr-black mbr-light mbr-pb-2\" mbr-theme-style=\"display-1\" mbr-if=\"showText\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">“微笑头盔”<br><i><br></i><br><br></h2>\n        <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n            <a class=\"btn btn-md btn-black\" href=\"https://mobirise.co\">\n                TRY IT\n            </a>\n        </div>\n    </div>\n</section>",
+          "_cid": "siEJkyduZ1",
+          "_anchor": "header4-1x",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "li when (@stylizedCounters)": {
+                "list-style": "none",
+                "position": "relative",
+                "&:before": {
+                  "position": "absolute",
+                  "left": "-55px",
+                  "content": "''",
+                  "display": "inline-block",
+                  "margin": "10px 15px",
+                  "line-height": "20px",
+                  "width": "10px",
+                  "height": "10px",
+                  "& when (@countersType = 'circle')": {
+                    "border": "1px solid @counterColor",
+                    "color": "@counterColor"
+                  },
+                  "& when not (@countersType = 'circle')": {
+                    "color": "contrast(@counterColor)",
+                    "background": "@counterColor"
+                  },
+                  "& when not (@countersType = 'square') and not (@countersType = 'romb')": {
+                    "border-radius": "50%"
+                  },
+                  "& when (@countersType = 'romb')": {
+                    "-webkit-transform": "rotate(45deg)",
+                    "transform": "rotate(45deg)"
+                  }
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#ff8282"
+            }
+          },
+          "_name": "content7",
+          "_customHTML": "<section class=\"content7 mbr-section\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#530900\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n            <option value=\"romb\">Rhombus</option>\n\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#000000\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-text counter-container mbr-fonts-style mbr-col-lg-8 mbr-col-md-12 mbr-col-sm-12\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                <ul>\n                    <li class=\"mbr-pb-2\"><b>主打产品：<i>微笑头盔\n</i></b></li><li class=\"mbr-pb-2\"><b>产品概念：\n</b><span style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">在高速运转的时代里，痛苦俯拾即是，崩溃一触即发，你所看见的是痛苦？不，你应该看见的是幸福。头盔里的世界才是真正的世界，精神疗愈的目的即是不反叛，我们所要做的，就是把幸福公正地给所有人，感知他人的幸福而幸福。而我们的头盔也可以帮助您成为幸福的传递者，您所传递的幸福，即是时代的精神</span><b style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">。&nbsp;</b></li><li class=\"mbr-pb-2\"><b>产品结构：</b>\n<span style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">由五</span><span style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">边形</span><span style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">和六边形透明材质组成的球形头盔是产品的基本外形（选取透明材质是为了体现我们贩卖的幸福的真实，同时球形设计也是为了符合本公司的核心概念“缸中之脑”)，内置特殊摄像头与显示屏帮助您感知外物，当您从内置特殊显示屏中窥探外物时，您会看到真实的世界，即人人幸福的世界。外置led显示屏，且每个显示屏上都带有一个超声波传感器，当有人靠近您时，它将传达给他人您感知到的幸福，从而再感染到他人。&nbsp;</span></li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siukR3V8AG",
+          "_anchor": "content7-1o",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".carousel, .slider-box, .carousel-img": {
+              "width": "100%",
+              "height": "300px"
+            },
+            ".carousel-img": {
+              "margin": "1rem 0 3rem",
+              "margin-left": "2rem",
+              "border-radius": "10px",
+              "box-shadow": "0 15px 30px 0 rgba(0, 0, 0, 0.15)",
+              "&:last-child": {
+                "margin-right": "2rem"
+              }
+            },
+            "img": {
+              "border-radius": "10px",
+              "object-fit": "cover"
+            },
+            "@media (min-width: 768px)": {
+              ".carousel-img": {
+                "max-width": "450px"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".amp-carousel-button": {
+                "display": "none"
+              },
+              ".carousel-img": {
+                "padding": "0",
+                "margin-left": "1.5rem",
+                "&:first-child": {
+                  "margin-left": "0"
+                },
+                "&:last-child": {
+                  "margin-right": "0"
+                }
+              }
+            }
+          },
+          "_name": "slider1",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"slider1 slider\" group=\"Carousels &amp; Sliders\" plugins=\"amp-main,amp-carousel\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <select title=\"Images\" name=\"imagesAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected=\"\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-fonts-style mbr-section-title mbr-bold align-center mbr-pb-2\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">Carousel With Images</h3>\n            <h4 class=\"mbr-fonts-style mbr-section-subtitle mbr-regular align-center\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore incidunt molestias.</h4>\n        </div>\n        <div class=\"slider-box\"><amp-carousel class=\"carousel\" height=\"360\" layout=\"fixed-height\" type=\"carousel\"><div class=\"carousel-img mbr-col-sm-12\">\n                <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/wechatimg507-2-900x1200.jpeg\" alt=\"Mobirise\" width=\"309.4555873925501\" height=\"360\" layout=\"responsive\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/wechatimg507-2-900x1200.jpeg\" alt=\"Mobirise\">\n                </amp-img>\n            </div><div class=\"carousel-img mbr-col-sm-12\">\n                <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/wechatimg507-3-900x1200.jpeg\" alt=\"Mobirise\" width=\"480\" height=\"360\" layout=\"responsive\">\n                        <div placeholder=\"\" class=\"placeholder\"></div>\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/wechatimg507-3-900x1200.jpeg\" alt=\"Mobirise\">\n                </amp-img>\n            </div><div class=\"carousel-img mbr-col-sm-12\">\n                <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/wechatimg508-2-900x1200.jpeg\" alt=\"Mobirise\" width=\"346.1538461538462\" height=\"360\" layout=\"responsive\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/wechatimg508-2-900x1200.jpeg\" alt=\"Mobirise\">\n                </amp-img>\n            </div><div class=\"carousel-img mbr-col-sm-12\">\n                <amp-img class=\"mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/wechatimg508-1-900x1200.jpeg\" alt=\"Mobirise\" width=\"480\" height=\"360\" layout=\"responsive\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/wechatimg508-1-900x1200.jpeg\" alt=\"Mobirise\">\n                </amp-img>\n            </div></amp-carousel>\n        \n        </div>\n    </div>\n</section>",
+          "_cid": "sk5ZHogmmC",
+          "_anchor": "slider1-24",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "blockquote": {
+              "border-color": "@lineColor",
+              "line-height": "2"
+            },
+            "a": {
+              "font-style": "italic"
+            },
+            "DIV": {
+              "text-align": "center"
+            }
+          },
+          "_name": "content10",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"010 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"color\" title=\"Line\" name=\"lineColor\" value=\"#000000\">\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"range\" title=\"Width\" name=\"textWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"8\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{'mbr-jc-c' : alignContent == 2, 'mbr-jc-e' : alignContent == 3}\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-{{textWidth}}\">\n                <div class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>通过联系其他生物的感知方式，建立独立的感官感受来帮助缓解心理压力，让服务对象更全面的了解自己，恢复对自我个体的安全感<b style>。</b></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sliOAUxSeL",
+          "_anchor": "content10-2a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".counter-container": {
+              "li when (@stylizedCounters)": {
+                "list-style": "none",
+                "position": "relative",
+                "&:before": {
+                  "position": "absolute",
+                  "left": "-55px",
+                  "content": "''",
+                  "display": "inline-block",
+                  "margin": "10px 15px",
+                  "line-height": "20px",
+                  "width": "10px",
+                  "height": "10px",
+                  "& when (@countersType = 'circle')": {
+                    "border": "1px solid @counterColor",
+                    "color": "@counterColor"
+                  },
+                  "& when not (@countersType = 'circle')": {
+                    "color": "contrast(@counterColor)",
+                    "background": "@counterColor"
+                  },
+                  "& when not (@countersType = 'square') and not (@countersType = 'romb')": {
+                    "border-radius": "50%"
+                  },
+                  "& when (@countersType = 'romb')": {
+                    "-webkit-transform": "rotate(45deg)",
+                    "transform": "rotate(45deg)"
+                  }
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#e29696"
+            }
+          },
+          "_name": "content7",
+          "_sourceTheme": "mobirise-amp",
+          "_customHTML": "<section class=\"06 mbr-section\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <select name=\"alignContent\" title=\"Align Content\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <input type=\"range\" title=\"Width\" name=\"textWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"10\">\n        <header>Counters</header>\n        <input type=\"checkbox\" title=\"Stylized\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter\" name=\"counterColor\" value=\"#3beed5\" condition=\"stylizedCounters\">\n        <select title=\"Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\" selected>Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n            <option value=\"romb\">Rhombus</option>\n        </select>   \n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>  \n\n    <div class=\"container\">\n        <div class=\"mbr-row\" mbr-class=\"{'mbr-jc-c' : alignContent == 2, 'mbr-jc-e' : alignContent == 3}\">\n            <div class=\"mbr-col-lg-{{textWidth}} mbr-col-md-12 mbr-col-sm-12\">\n                <div class=\"mbr-text counter-container mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n                    <ul>\n                        <li class=\"mbr-pb-2\"><b>传感器的应用：</b><span style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">“传感器”专注于人体产生的“生物反馈”，当人体由于紧张情绪产生生理反应，传感器会检测到这种反应，以直观的形式进行反馈，提醒使用者有意识的进行自我调节。</span></li><li class=\"mbr-pb-2\"><b>具体应用：</b><span style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">使用手册——将装置带于头部后，手持附有传感器的手镯，在行走中将对周围的人进行感应识别。头盔内置的显示屏将识别人脸，感染笑脸。同时头盔特殊的镭射材质，让体验者能感受到复眼视觉的效果。</span></li><li class=\"mbr-pb-2\"><b style=\"font-family: inherit; font-size: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;\">装置附带超声波感应器，当与他人发生接触和互动时，会进行数据记录，并从而控制点阵模块的显示。</b></li><li class=\"mbr-pb-2\"><b>佩戴产品上还带有最普遍的听觉和视觉记录仪器，客户可以在外出时用它记录下一段或特殊或平淡的历程。</b></li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sliPt0PwRu",
+          "_anchor": "content7-2b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@showTitle), (@showSubtitle)": {
+              "@media (max-width: 767px)": {
+                ".btn-container when (@showButton)": {
+                  "padding-top": "1rem"
+                }
+              }
+            }
+          },
+          "_name": "info2",
+          "_customHTML": "<section class=\"info2\" group=\"Testimonials & Info\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButton\" checked>\n        <input type=\"checkbox\" title=\"Text on Left/Right\" name=\"flexDirection\" condition=\"(showTitle || showSubtitle) && showButton\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse': flexDirection}\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-8\" mbr-if=\"showTitle || showSubtitle\">\n                <h2 class=\"mbr-section-title align-right mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    Accelerated Mobile Pages\n                </h2>\n                <h3 class=\"mbr-section-subtitle align-right mbr-fonts-style mbr-light mbr-py-1\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum atque, rerum excepturi fuga reprehenderit laudantium, dolorum autem iusto ipsum harum perspiciatis nobis sequi sint.\n                </h3>\n            </div>\n            <div class=\"btn-container mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 align-center mbr-flex\" mbr-if=\"showButton\">\n                <div class=\"mbr-section-btn mbr-m-auto\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"page2.html\" data-app-placeholder=\"Type Text\">返回上一个界面</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "siulPZHZtA",
+          "_anchor": "info2-1q",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
